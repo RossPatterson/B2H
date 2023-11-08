@@ -635,6 +635,10 @@ select                                                   /* !OPSYS! */
   when env='WINNT'     then currsys=WINNT
   when env='WIN2K'     then currsys=WINNT
   when env='WINXP'     then currsys=WINNT
+  when env='WIN7'      then currsys=WINNT
+  when env='WIN8'      then currsys=WINNT
+  when env='WIN10'     then currsys=WINNT
+  when env='WIN11'     then currsys=WINNT
   otherwise call MsgOut !term 200,'Environment type "'env'" unknown!'
   end
 
